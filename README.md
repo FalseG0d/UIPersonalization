@@ -1,1 +1,0 @@
-The Following is a JavaScript Based Face Recognition program. Using face-api.min.js an envelope for Tensorflow.
