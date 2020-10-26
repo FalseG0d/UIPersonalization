@@ -10,5 +10,9 @@ def home(request):
             break
     cap.release()
     cv2.destroyAllWindows()
+
+    return redirect(index)
+
+def index(request):
     
     return render(request,"home.html")
