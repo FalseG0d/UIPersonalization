@@ -1,0 +1,36 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'base/css/main.css' %}"">
+    <script src="{% static 'base/js/main.js' %}"></script>
+</head>
+<body>
+
+    <div class="row">
+        <div class="column">
+          <div class="card icon">
+              <a href="/1"><img src="{% static 'base/img/like.png' %}"></a>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card icon">
+            <a href="/2"><img src="{% static 'base/img/loc.png' %}"></a>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card icon">
+            <a href="/3"><img src="{% static 'base/img/rocket.png' %}"></a>
+          </div>
+        </div> 
+    </div>
+      
+            
+</body>
+</html>
