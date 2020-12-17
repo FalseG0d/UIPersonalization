@@ -13,8 +13,11 @@ def get_key():
     #K.clear_session()
     predicted_ages,predicted_genders=face.detect_face()
 
-    print("\n\n\n\nAge: "+str(predicted_ages))
     #Calculating Session Key
+    if predicted_genders>0.5:
+        predicted_genders=1
+    else:
+        predicted_genders=0
     fuzzy=findClosest(predicted_genders*50+predicted_ages/4)
     K.clear_session()
     return fuzzy

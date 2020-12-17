@@ -11,39 +11,84 @@
 <meta name="description" content="">
 <meta name="author" content="webthemez">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tailor Made</title>
+<title>Fab fashion responsive html bootstrap web template by webthemez</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/flexslider.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/jquery.fancybox.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/main.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/responsive.css')}}">
-<link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/font-icon.css')}}">
-<link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/animate.min.css')}}">
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='-1.0/css/font-icon.css')}}"> -->
+<link rel= "stylesheet" href="{{ url_for('static', filename='-1.0/css/animate.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='-1.0/css/style4.css')}}" />
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="./font-awesome/css/font-awesome.css"> -->
 </head>
 
 <body>
 <!-- header section -->
 <section class="banner" role="banner" id="home">
-  <header id="header">
-    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="{{ url_for('static', filename='-1.0/images/logo.png')}}" alt=""></a>
-      <nav class="navigation" role="navigation">
-        <ul class="primary-nav">
-		 <li><a href="#home">Home</a></li>
-		  <li><a href="#intro">designes</a></li>
-          <li><a href="#services">Features</a></li>
-          <li><a href="#content-3-10">About</a></li> 
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#teams">Friends</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
-  </header>
+    <!-- Nav Bar Start -->
+    <div class="nav">
+      <div class="container-fluid">
+         
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+              <a href="#" class="navbar-brand">MENU</a>
+             
+
+              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                  <div class="navbar-nav mr-auto">
+                      <a href="index.html" class="nav-item nav-link active">Home</a>
+                      <a href="product-list.html" class="nav-item nav-link">Products</a>
+                      <a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
+                      <a href="cart.html" class="nav-item nav-link">Cart</a>
+                      <a href="checkout.html" class="nav-item nav-link">Checkout</a>
+                      <a href="my-account.html" class="nav-item nav-link">My Account</a>
+                     
+                  </div>
+                 
+              </div>
+          </nav>
+      </div>
+  </div>
+  <!-- Nav Bar End -->      
+  
+  <!-- Bottom Bar Start -->
+  <div class="bottom-bar">
+      <div class="container-fluid">
+          <div class="row align-items-center">
+              <div class="col-md-3">
+                  <div class="logo">
+                      <a href="index.html">
+                          <img src="{{ url_for('static', filename='-1.0/images/logo.png')}}" alt="Logo">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="search">
+                      <input type="text" placeholder="Search">
+                      <button><i class="fa fa-search"></i></button>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="user">
+                      <a href="wishlist.html" class="btn wishlist">
+                          <i class="fa fa-heart"></i>
+                          <span>(0)</span>
+                      </a>
+                      <a href="cart.html" class="btn cart">
+                          <i class="fa fa-shopping-cart"></i>
+                          <span>(0)</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Bottom Bar End -->      
   <!-- banner text --> 
  
 <div id="first-slider">
@@ -62,7 +107,7 @@
                 <div class="row"><div class="container"> 
                     <div class="col-md-9 text-left">
                         <h3 data-animation="animated bounceInDown">Fashion Trends</h3>
-                        <h4 data-animation="animated bounceInUp">Get our latest 2020 Collection </h4>             
+                        <h4 data-animation="animated bounceInUp"></h4>             
                      </div>
                 </div></div>
              </div> 
@@ -70,8 +115,7 @@
             <div class="item slide2">
                 <div class="row"><div class="container">
                     <div class="col-md-7 text-left">
-                        <h3 data-animation="animated bounceInDown">Winter Collection</h3>
-                        <h4 data-animation="animated bounceInUp">Don't Let The Cold Get To You</h4>
+                       
                      </div> 
                 </div></div>
             </div>
@@ -80,7 +124,7 @@
                 <div class="row"><div class="container">
                     <div class="col-md-7 text-left">
                         <h3 data-animation="animated bounceInDown">Summer Collection</h3>
-                        <h4 data-animation="animated bounceInUp">Outshine The Sun</h4>
+                       
                      </div>  
                 </div></div>
             </div>     
@@ -102,7 +146,7 @@
   <div class="container">
     <div class="col-md-10 col-md-offset-1 text-center">
       <h3>Welcome To Fab</h3>
-      <p>Find Fashion For All. Make Everyone Beautiful.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
 </section>
@@ -114,7 +158,7 @@
     <div class="row">  
 	<div class="section-header">
                 <h2 class="wow fadeInDown animated">Design Trends</h2>
-                <p class="wow fadeInDown animated">We don't only find fashion but  <br> We also Accept Your Choices.</p>
+                <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
             <div id="content24" data-section="content-24" class="data-section"> 
     		<div class="col-md-4">
@@ -122,24 +166,24 @@
 				<img src="{{ url_for('static', filename='-1.0/images/img1.jpg')}}" alt="bride" class="img-middle"/>
 				<div class="align-center">
 				<h4>Women's Fashion</h4>
-				<p>Women Fashion Online Store - Buy latest women fashion clothing, accessories, makeup & footwear Online at Myntra. Shop from the huge range of women's.</p> 
-				<a href="details.html" class="morebtn">More</a>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
+				<a href="details.html" class="morebtn">Explore more</a>
 				</div>
 			</div>
 				<div class="col-md-4">  
 				<img src="{{ url_for('static', filename='-1.0/images/img2.jpg')}}" alt="bride" class="img-middle"/>
 				<div class="align-center">
 				<h4>Men's Fashion</h4>
-				<p>Mens' Fashion: Shop for Mens' Clothing & accessories online at best prices in India. Choose from a wide range of Men' Clothing. </p> 
-				<a href="details.html" class="morebtn">More</a>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
+				<a href="details.html" class="morebtn">Explore more</a>
 				</div>
 			</div> 
 			<div class="col-md-4">  
 				<img src="{{ url_for('static', filename='-1.0/images/img3.jpg')}}" alt="bride" class="img-middle"/>
 				<div class="align-center">
 				<h4>Kids's Fashion</h4>
-				<p>Mens' Fashion: Shop for Mens' Clothing & accessories online at best prices in India. Choose from a wide range of Men' Clothing.</p> 
-				<a href="details.html" class="morebtn">More</a>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
+				<a href="details.html" class="morebtn">Explore more</a>
 				</div>
 			</div> 
     	</div>
@@ -152,25 +196,25 @@
   <div class="container">
   <div class="section-header">
                 <h2 class="wow fadeInDown animated">Features</h2>
-                <p class="wow fadeInDown animated">Featured Fashion is an independent fashion magazine showcasing creativists from the fashion industry.<br> The magazine & our instagram channel reflects the way.</p>
+                <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
     <div class="row">
       <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-heart"></span>
         <div class="services-content">
-          <h5>Money Back</h5>
-          <p>A money back plan provides the full sum assured on maturity. This is irrespective of the survival benefits and the amount paid under the same.</p> 
+          <h5>Secure payment</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p> 
 	   </div>
       </div>
       <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-gift"></span>
         <div class="services-content">
-          <h5>Gift Coupon</h5>
-          <p>A gift of choice. Celebrate every occasion with your loved ones in a special way.</p> 
+          <h5>Easy return</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p> 
 	   </div>
       </div>
       <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone"></span>
         <div class="services-content">
           <h5>Free Shipping</h5>
-          <p>Free shipping is a marketing tactic used primarily by online vendors and mail-order catalogs as a sales strategy to attract customers.</p> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p> 
 		</div>
       </div> 
     </div>
@@ -192,10 +236,10 @@
 					<h3>About Us</h3>
 				</div>
 				<div>
-					<p>Strongly believes that technology is in its adolescence phase right now and we all soon will be witnessing some big changes in almost every field of Technology and aspect of life. So I wish to learn as much as possible to let myself be the part of the revolution when it finally happens.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					<p>Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 				</div>
-				<a href="#gallery" class="btn btn-outline btn-outline outline-dark">Gallery</a>
+				<a href="#gallery" class="btn btn-outline btn-outline outline-dark">Explore now</a>
 			</div>
 		</div><!-- /.row-->
 	</div><!-- /.container -->
@@ -204,14 +248,14 @@
 
 <!-- videos section -->
 <section class="video-section">
-  <div class="container">
+  <div class="container"> 
     <div class="row">  
             <div id="content24" data-section="content-24" class="data-section"> 
     		<div class="col-md-6">
-				<h3>Videos</h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-   				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+				<h3>Video: Explore about our product</h3>
+				<p>There are millions of users using our product daily, all of them have different ventures and desires, so we planned to club a few of you together</p>
+   				<p>And customize the whole experience for you so it gets easier for you to find what you are looking for.</p>
+				<p>So, whithout a delay start exploring our product now</p>
     		</div>
 			<div class="col-md-6">
 				<div class="embed-responsive embed-responsive-16by9">
@@ -228,8 +272,8 @@
 <section id="gallery" class="gallery section">
   <div class="container-fluid">
     <div class="section-header">
-                <h2 class="wow fadeInDown animated">Gallery</h2>
-                <p class="wow fadeInDown animated">Strongly believes that technology is in its adolescence phase right now and we all soon will be witnessing some big changes in almost every field of Technology and aspect of life. So I wish to learn as much as possible to let myself be the part of the revolution when it finally happens.</p>
+                <h2 class="wow fadeInDown animated">Our products</h2>
+                <p class="wow fadeInDown animated">Find something that suits your soul </p>
             </div>
     <div class="row no-gutter">
       <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{{ url_for('static', filename='-1.0/images/portfolio/01.jpg')}}" class="work-box"> <img src="{{ url_for('static', filename='-1.0/images/portfolio/01.jpg')}}" alt="">
@@ -304,15 +348,15 @@
 <section id="teams" class="section teams">
   <div class="container">
       <div class="section-header">
-                <h2 class="wow fadeInDown animated">Team</h2>
-                <p class="wow fadeInDown animated">According to the team approach to leadership, a team is a type of organizational group of people that are members. A team is composed of members who are dependent on each other, work towards interchangeable achievements, and share common attainments. A team works as a whole together to achieve certain things.</p>
+                <h2 class="wow fadeInDown animated">Testimonial</h2>
+                <p class="wow fadeInDown animated">What our users have to say for us</p>
             </div>
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <div class="person"><img src="{{ url_for('static', filename='-1.0/images/team-1.jpg')}}" alt="" class="img-responsive">
           <div class="person-content">
-            <h4>Leigh Thompson</h4> 
-            <p>A team is a group of individuals working together to achieve their goal. As defined by Professor Leigh Thompson of the Kellogg School of Management.</p>
+            <h4>Jonh Dow</h4> 
+            <p>One of the best user experience to help you find best products at the cost of minimal user efforts</p>
           </div>
         </div>
       </div>
@@ -320,7 +364,7 @@
         <div class="person"> <img src="{{ url_for('static', filename='-1.0/images/team-2.jpg')}}" alt="" class="img-responsive">
           <div class="person-content">
             <h4>Markus Linn</h4> 
-            <p>A team is a group of individuals working together to achieve their goal. As defined by Professor Leigh Thompson of the Kellogg School of Management.</p>
+            <p>It was so easy for me to find actually what I was looking for</p>
           </div> 
         </div>
       </div>
@@ -328,7 +372,7 @@
         <div class="person"> <img src="{{ url_for('static', filename='-1.0/images/team-3.jpg')}}" alt="" class="img-responsive">
           <div class="person-content">
             <h4>Chris Jemes</h4> 
-            <p>A team is a group of individuals working together to achieve their goal. As defined by Professor Leigh Thompson of the Kellogg School of Management.</p>
+            <p>This type of user journey thrills me a lot, not just a great user experience but great verstality</p>
           </div> 
         </div>
       </div>
@@ -336,82 +380,59 @@
         <div class="person"> <img src="{{ url_for('static', filename='-1.0/images/team-4.jpg')}}" alt="" class="img-responsive">
           <div class="person-content">
             <h4>Vintes Mars</h4> 
-            <p>A team is a group of individuals working together to achieve their goal. As defined by Professor Leigh Thompson of the Kellogg School of Management.</p>
+            <p>Great experience and suggestions to easily find what you are looking for</p>
           </div> 
         </div>
       </div>
     </div>
   </div>
 </section>
+<div class="newsletter">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-6">
+              <h1>Subscribe Our Newsletter</h1>
+          </div>
+          <div class="col-md-6">
+              <div class="form">
+                  <input type="email" value="Your email here">
+                  <button>Submit</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <!-- our team section --> 
 <!-- Testimonials section -->
-<section id="testimonials" class="section testimonials no-padding">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <p>"The world as we have created it is a process of our thinking."</p>
-                <p>Chris Mentsl</p>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <p>"The world as we have created it is a process of our thinking."</p>
-                <p>Kristean velnly</p>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <p>"The world as we have created it is a process of our thinking." </p>
-                <p>Markus Denny</p>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <p>"The world as we have created it is a process of our thinking." </p>
-                <p>John Doe</p>
-              </blockquote>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- Testimonials section --> 
 
 <!-- contact section -->
-<section id="contact" class="section">
-  <div class="container">
-      <div class="section-header">
-                <h2 class="wow fadeInDown animated">Mail Us</h2>
-                <p class="wow fadeInDown animated">The United States Postal Service is an independent agency of the executive branch of the United States federal government responsible for<br> providing postal service in the United States, including its insular areas and associated states.</p>
-            </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 conForm">       
-        <div id="message"></div>
-        <form method="post" action="php/contact.php" name="cform" id="cform">
-          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
-          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
-          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message..."></textarea>
-          <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
-          <div id="simple-msg"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- contact section --> 
 <!-- Footer section -->
+<!-- <footer class="footer">
+<div class="container-fluid">
+<div id="map-row" class="row">
+    <div class="col-xs-12">    
+    	<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe> 
+      
+          <div id="map-overlay" class="col-xs-5 col-xs-offset-6" style="">
+    		<h4 style="margin-top:0;color:#fff;">Address</h4>
+    		<address style="color:#fff;">
+    			1234 Street Dr.<br>
+    			Vancouver, BC<br>
+    			Canada<br>
+    			V6G 1G9<br>
+    			<abbr title="Phone">Tel:</abbr> (604) 555-4321
+    		</address>
+			  © 2018 Company Name. All Rights Reserved.
+			  <br/><a target="_blank" href="https://webthemez.com/tag/free" target="_blank">Free Templates</a> by WebThemez.com
+    	</div>
+    </div>
+	 </div>
+</div>
+</footer> -->
 <div class="footer">
   <div class="container-fluid">
       <div class="row">
@@ -463,6 +484,23 @@
               </div>
           </div>
       </div>
+      
+     <!-- <div class="row payment align-items-center">
+          <div class="col-md-6">
+              <div class="payment-method">
+                  <h2>We Accept:</h2>
+                  <img src="img/payment-method.png" alt="Payment Method" />
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="payment-security">
+                  <h2>Secured By:</h2>
+                  <img src="img/godaddy.svg" alt="Payment Security" />
+                  <img src="img/norton.svg" alt="Payment Security" />
+                  <img src="img/ssl.svg" alt="Payment Security" />
+              </div>
+          </div>
+      </div>-->
   </div>
 </div>
 <!-- Footer section --> 
