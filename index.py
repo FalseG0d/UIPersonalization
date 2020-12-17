@@ -22,11 +22,7 @@ def home():
 
 @app.route('/set/<key>')
 def set_key(key):
-    key=findClosest(float(key))
-    try:
-        key=str(key)
-    except:
-        key=str(-1)
+    key=str(findClosest(float(key)))
 
     session['fuzzy']=key
     
