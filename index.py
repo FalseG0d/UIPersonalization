@@ -1,12 +1,13 @@
 from flask import Flask,session,render_template,redirect,url_for
 from modules.get_key import get_key
-from modules.database import mongo
+# from modules.database import mongo
 from modules.fuzzy import findClosest
 from decouple import config
 
 app=Flask(__name__)
-app.config["MONGO_URI"]=config('MONGO_URI')
-mongo.init_app(app)
+
+# app.config["MONGO_URI"]=config('MONGO_URI')
+# mongo.init_app(app)
 
 app.secret_key=config('SECRET_KEY')
 
@@ -38,9 +39,9 @@ def check():
     print("\n\nSession Key: "+str(session['fuzzy']))
     return redirect(url_for("home"))
 
-@app.route('/file/<filename>')
-def file(filename):
-    return mongo.send_file(filename)
+# @app.route('/file/<filename>')
+# def file(filename):
+#     return mongo.send_file(filename)
 
 def main():
     app.run(debug=True)
