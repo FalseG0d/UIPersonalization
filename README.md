@@ -59,6 +59,18 @@ Features:
 * A Number Of Themes to choose From.
 
 
+## Formula Used For Calculating Key
+
+```
+session_key = predicted_genders * 50 + predicted_ages / 4
+```
+
+predicted_genders = 1 for Male
+predicted_genders = 0 for Female
+
+Change the Key 
+
+
 ### Built With
 * [Python](https://www.python.org/)
 * [PyQt5](https://pypi.org/project/PyQt5/)
@@ -106,8 +118,6 @@ python index.py
 ```sh
 python dev.py
 ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
